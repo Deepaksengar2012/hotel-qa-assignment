@@ -1,0 +1,16 @@
+{
+  "name": "hotel-qa-playwright",
+  "version": "1.0.0",
+  "description": "Playwright UI automation for the Hotel Recommendation QA assignment",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:stability": "playwright test tests/delayed-button.spec.ts --repeat-each=10",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
